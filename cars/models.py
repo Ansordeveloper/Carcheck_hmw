@@ -9,7 +9,7 @@ class Cars(models.Model):
     rudder_location = models.CharField(verbose_name="Расположение руля", max_length=100)
 
     def __str__(self):
-        return self.gos_num
+        return self.gos_num, self.brand, self.model, self.year
     
     class Meta:
        verbose_name = "Машина"
