@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['Ansor.pythonanywhere.com']
 
 
 # Application definition
@@ -123,7 +123,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATIC_ROOT = '/var/www/Ansor/static'
+MEDIA_URL = 'media/'
+
+STATIC_ROOT = '/home/Ansor/static'
+ 
+MEDIA_ROOT = '/home/Ansor/media'                                                                                                                
+
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
