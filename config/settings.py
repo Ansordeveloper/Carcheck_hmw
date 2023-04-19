@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -123,5 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
